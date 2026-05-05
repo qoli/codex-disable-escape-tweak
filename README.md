@@ -4,6 +4,13 @@ A small [Codex++](https://github.com/b-nnett/codex-plusplus) renderer tweak
 that consumes `Escape` key events inside Codex Desktop before the app's
 shortcut handlers can interrupt an active response.
 
+<img src="docs/media/disable-escape-demo.gif" width="960" alt="Demo showing Codex++ loading the disable Escape tweak and consuming Escape before Codex shortcuts can interrupt" />
+
+The demo is a cropped and annotated version of a Codex Desktop screen recording.
+It shows the runtime path: Codex++ loads `co.qoli.disable-escape`, the tweak
+registers capture-phase key handlers, and `Escape` is consumed before Codex
+shortcut handling sees it.
+
 Related upstream issue:
 
 - [openai/codex#20767](https://github.com/openai/codex/issues/20767) -
